@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Management</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Employee Management</h1>
+        <div class="form-container">
+            <input type="text" id="name" placeholder="Name">
+            <input type="text" id="position" placeholder="Position">
+            <input type="text" id="department" placeholder="Department">
+            <input type="number" id="salary" placeholder="Salary">
+            <button onclick="addEmployee()">Add Employee</button>
+        </div>
+        <h2>Employee List</h2>
+        <div id="employee-list"></div>
+    </div>
+
+    
+    <div class="edit-container" id="edit-container" style="display: none;">
+        <h2>Edit Employee</h2>
+        <input type="hidden" id="edit-id">
+        <input type="text" id="edit-name" placeholder="Name">
+        <input type="text" id="edit-position" placeholder="Position">
+        <input type="number" id="edit-salary" placeholder="Salary">
+        <button onclick="updateEmployee()">Update Employee</button>
+        <button onclick="cancelEdit()">Cancel</button>
+    </div>
+
+    
+    <div class="calculate-container">
+        <h2>Calculate Employee Salary</h2>
+        <select id="employee-select"></select>
+        <input type="number" id="hours-worked" placeholder="Hours Worked">
+        <input type="number" id="hourly-rate" placeholder="Hourly Rate">
+        <button onclick="calculateSalary()">Calculate Salary</button>
+        <div id="calculated-salary"></div>
+    </div>
+
+  
+    <div class="total-salary-container">
+        <h2>Total Salary of All Employees</h2>
+        <button onclick="calculateTotalSalary()">Calculate Total Salary</button>
+        <div id="total-salary"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

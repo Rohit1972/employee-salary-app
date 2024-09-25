@@ -1,0 +1,133 @@
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+.container {
+    max-width: 800px;
+    margin: 50px auto;
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+h1, h2 {
+    color: #333;
+}
+
+h1 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+h2 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+/* Form and Input Styles */
+.form-container, .edit-container, .calculate-container, .total-salary-container {
+    margin-bottom: 30px;
+    padding: 15px;
+    background: #fafafa;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+}
+
+.form-container input, .form-container button,
+.edit-container input, .edit-container button,
+.calculate-container input, .calculate-container button,
+.total-salary-container input, .total-salary-container button {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.form-container button, .edit-container button,
+.calculate-container button, .total-salary-container button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.form-container button:hover, .edit-container button:hover,
+.calculate-container button:hover, .total-salary-container button:hover {
+    background-color: #0056b3;
+}
+
+
+#employee-list {
+    margin-top: 20px;
+}
+
+.employee {
+    padding: 15px;
+    background: #f9f9f9;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.employee span {
+    font-size: 16px;
+}
+
+.employee button {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.employee button:hover {
+    background-color: #218838;
+}
+
+
+.edit-container {
+    background: #ffffff;
+    border: 1px solid #ddd;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.edit-container button:last-child {
+    background-color: #dc3545;
+}
+
+.edit-container button:last-child:hover {
+    background-color: #c82333;
+}
+
+
+.calculate-container, .total-salary-container {
+    background: #ffffff;
+    border: 1px solid #ddd;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.calculate-container input, .total-salary-container input {
+    width: calc(100% - 22px);
+}
+
+.calculate-container #calculated-salary, .total-salary-container #total-salary {
+    font-size: 18px;
+    font-weight: bold;
+    color: #28a745;
+    margin-top: 15px;
+}
